@@ -1,0 +1,298 @@
+/* ======Global style======== */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+
+*{
+  padding: 0;
+  box-sizing: border-box !important;
+  list-style-type: none !important;
+  text-decoration: none !important;
+  font-family: "Poppins", system-ui;
+  border: 1px solid red;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  margin: 0 !important;
+  color: #ffffff !important;
+  
+}
+
+img{
+    width: 100%;
+    max-width: 100%;
+}
+
+body{
+    background-color: #0F0F0F !important;
+    font-family:  "Manrope", serif;;
+}
+
+p{
+  font-size: 14px !important;
+}
+
+.subhead{
+  max-width: 700px !important;
+  color: red;
+  display: inline-block;
+}
+
+small{
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 10.9px !important;
+  display: inline-block;
+}
+
+.muted{
+  opacity: 0.7 !important;
+  /* color: #ccc !important; */
+  /* color: red !important; */
+}
+
+img{
+  max-width: 100%;
+}
+
+
+.container2{
+  width: 81%;
+  margin: 0 auto !important;
+}
+
+.nav-link{
+  font-size: 14px !important;
+}
+
+button{
+  border: none;
+  outline: none;
+}
+
+.button1{
+  border: none;
+  outline: none;
+  background-color: red;
+  color: #ffffff;
+  padding: 10px 14px;
+  cursor: pointer;
+  font-size: 11px;
+  transition: all 400ms ease-in-out;
+}
+
+.button1:hover{
+  background-color: rgba(255, 0, 0, 0.571);
+
+}
+
+input{
+  outline: none;
+  padding: 4.9px 7px;
+  border: none;
+  background-color: #0F0F0F;
+  font-size: 12px !important;
+}
+
+.input::placeholder{
+  font-size: 12px !important;
+}
+
+.hero{
+  min-height: 400px;
+}
+
+.button2{
+  width: 2rem;
+  height: 2rem;
+  background-color: #1F1F1F;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content{
+  max-width: 700px;
+  min-height: 400px;
+}
+
+
+
+/* .grid1{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 1.7rem;
+} */
+
+.grid2{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 1.7rem;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.7rem;
+}
+
+.service-card{
+  background-image: linear-gradient(40deg, black, black, rgba(0, 0, 0, 0.719), #d8030334);
+  padding: 2rem;
+  border-radius: 8px;
+  border: 1px solid #cccccc7e;
+}
+
+.image-box{
+  width: 3rem;
+  height: 3rem;
+  border-radius: 7px;
+  background-color: #0F0F0F;
+  
+  border: 0.4px solid #cccccc7e;
+}
+
+.card-head img{
+  width: 2rem;
+}
+
+.num{
+  border-radius: 7px;
+  width: 2.4rem;
+  height: 2.4rem;
+  font-size: 13px;
+  background-color: #1F1F1F;
+}
+
+.faq-item{
+  position: relative;
+  padding: 1rem !important;
+  /* border: 1px solid #ffffff; */
+}
+
+.faq-item::after{
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 4%;
+  width: 90%;
+  height: 2px;
+  background-image: linear-gradient(40deg, black, #d803034e, rgba(0, 0, 0, 0.719) );
+}
+
+.faq-btn{
+  background-color: transparent !important;
+  border: none;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+.faq-answer.close{
+  height: 0;
+}
+
+
+.plan{
+  background-color: #1F1F1F;
+  border-radius: 7px;
+  padding: 1.7rem;
+}
+
+.plan-price{
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.trial{
+  background-image: url('../public/Images/heroo.jpg');
+  background-color: #1f1f1fa5;
+  background-blend-mode: multiply;
+  background-position: center;
+  background-size: cover;
+  min-height: 170px;
+  border-radius: 8px;
+  background-color: #1F1F1F;
+
+}
+
+.footer{
+  background-color: #000;
+}
+
+.footer .nav-link{
+  font-size: 11px !important;
+  opacity: 0.7;
+}
+
+.footer li {
+  font-size: 12px !important;
+
+}
+
+
+.movie-cover{
+  min-height: 300px;
+  position: relative;
+}
+
+.movie-info {
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%, 50%);
+}
+
+
+
+
+@media (max-width: 767px) {
+  .container2{
+    width: 90%;
+  }
+  
+.faq-item{
+  padding: 1rem 0 !important;
+}
+  
+.faq-item::after{
+  left: 0;
+  width: 100%;
+}
+
+}
+
+
+@media (max-width: 400px) {
+  .grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    gap: 1.7rem;
+  }
+
+  .button1{
+    border: none;
+    outline: none;
+    background-color: red;
+    color: #ffffff;
+    padding: 4px 10px;
+    cursor: pointer;
+    font-size: 11px;
+    transition: all 400ms ease-in-out;
+  }
+  
+  .button1:hover{
+    background-color: rgba(255, 0, 0, 0.67);
+  
+  }
+  
+  input{
+    outline: none;
+    padding: 4px;
+    border: none;
+    background-color: #0F0F0F;
+    font-size: 12px !important;
+  }
+
+  .plan{
+    padding: 10px;
+  }
+}
