@@ -8,7 +8,7 @@
   list-style-type: none !important;
   text-decoration: none !important;
   font-family: "Poppins", system-ui;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
   margin: 0 !important;
@@ -65,6 +65,7 @@ img{
 
 button{
   border: none;
+  background-color: transparent;
   outline: none;
 }
 
@@ -103,11 +104,12 @@ input{
 .button2{
   width: 2rem;
   height: 2rem;
-  background-color: #1F1F1F;
+  background-color: #0F0F0F;
   color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 8px;
 }
 
 .hero-content{
@@ -230,18 +232,137 @@ input{
 
 
 .movie-cover{
-  min-height: 300px;
+  min-height: 490px;
   position: relative;
+  background-image: url('../public/Images/avengers.jpg');
+  background-size: cover;
+  background-position: center;
+
+  background-color: #1f1f1fa5;
+  background-blend-mode: darken;
+  border-radius: 8px;
 }
 
 .movie-info {
+  width: 700px;
+  max-width: 100%;
   position: absolute;
   left: 50%;
-  bottom: 50%;
+  bottom: 27%;
   transform: translate(-50%, 50%);
 }
 
+.actions{
+  width: 90%;
+  position: absolute;
+  left: 5%;
+  bottom: 1.7rem;
+}
 
+
+.cat{
+  position: relative;
+}
+
+.strike{
+  text-decoration: line-through !important;
+}
+
+.cat::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0.7rem;
+  border-radius: 4px;
+  background-color: #db4444;
+}
+
+.cat-label {
+  color: #db4444;
+  
+}
+
+.movie-card{
+  padding: 1rem;
+  width: fit-content;
+  border-radius: 8px;
+  background-color: #1F1F1F;
+}
+
+
+.moviecard-img{
+  width: 150px;
+  height: 150px;
+}
+
+
+.next{
+  background-color: #000;
+  padding: 4px 7px;
+  border-radius: 8px ;
+}
+
+/* span{
+  background-color: #ff0000;
+  padding: 4px;
+  border-radius: 7px;
+  font-size: 10px !important;
+} */
+
+
+
+
+table{
+  width: 100%;
+  border-collapse: collapse;
+  /* border: 3px solid red !important; */
+  overflow: hidden;
+
+  border-radius: 8px !important;
+}
+
+td, th{
+  border: 1px solid #cccccc2d !important;
+  padding: 1rem;
+  max-width: 240px;
+}
+
+
+
+td{
+  font-size: 13px;
+  opacity: 0.7;
+
+}
+
+thead{
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+
+}
+
+th {
+  background-color: #000;
+  color: white;
+}
+
+
+th:first-child {
+  border-top-left-radius: 10px;
+  
+  border: 1px solid #cccccc2d 
+}
+th:last-child {
+  border-top-right-radius: 10px;
+}
+tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+}
+tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
+}
 
 
 @media (max-width: 767px) {

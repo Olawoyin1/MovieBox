@@ -4,8 +4,8 @@ const Trial = () => {
   return (
     <div className='my-4'>
         <div className="container2">
-            <div className="trial p-5 d-flex align-items-md-center align-items-start gap-3 flex-column flex-md-row justify-content-between">
-                <div className="left">
+            <div className="trial p-5 d-flex align-items-center  gap-3 flex-column flex-md-row justify-content-center justify-content-md-between">
+                <div className="left text-center text-md-start">
                     <h5>Start your free trial today!</h5>
                     <small className="muted">This is a clear and concise call to action that encourages users to sign up for a free trial of StreamVibe.</small>
                 </div>
