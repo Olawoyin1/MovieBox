@@ -9,7 +9,9 @@ const Navbar = () => {
     <div>
         <div className="container2 header d-flex align-items-center justify-content-between">
             <div className="logo">
+                <Link to="/">
                 <h5>MovieBox</h5>
+                </Link>
             </div>
             <nav className="nav d-none d-md-flex">
                 <ul className='navbar'>

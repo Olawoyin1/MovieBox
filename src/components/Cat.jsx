@@ -7,8 +7,7 @@ import { IoMdEye } from "react-icons/io";
 
 import { IoIosTime } from "react-icons/io";
 
-
-const Cat = ({ data, header, desc , arrow, trending}) => {
+const Cat = ({ data, header, desc, arrow, trending }) => {
   const slider = React.useRef(null);
 
   const settings = {
@@ -45,32 +44,35 @@ const Cat = ({ data, header, desc , arrow, trending}) => {
           slidesToScroll: 1,
         },
       },
+      
     ],
   };
-
-
-
 
   return (
     <div className="my-5">
       <div className="container2">
         <div className="">
           <div className="cat-header mt-3 d-flex align-items-center justify-content-between">
-          <div>
+            <div>
               <h5>{header}</h5>
-              {
-                desc &&  <small className="subhead d-none d-sm-flex muted mt-3">
-                Whether you're looking for a comedy to make you laugh, a drama
-                to make you think, or a documentary to learn something new{" "}
-              </small>
-              }
-             
+              {desc && (
+                <small className="subhead d-none d-sm-flex muted mt-3">
+                  Whether you're looking for a comedy to make you laugh, a drama
+                  to make you think, or a documentary to learn something new{" "}
+                </small>
+              )}
             </div>
             <div className="d-flex align-items-center gap-2">
-              <button className="button2" onClick={() => slider?.current?.slickPrev()}>
+              <button
+                className="button2"
+                onClick={() => slider?.current?.slickPrev()}
+              >
                 <IoIosArrowRoundBack size={20} />
               </button>
-              <button onClick={() => slider?.current?.slickNext()} className="button2">
+              <button
+                onClick={() => slider?.current?.slickNext()}
+                className="button2"
+              >
                 <IoIosArrowRoundForward size={20} />
               </button>
             </div>
@@ -80,50 +82,56 @@ const Cat = ({ data, header, desc , arrow, trending}) => {
         <div className="all-items mt-3">
           <div className="slider-container">
             <div>
-             
-                <>
-                  <Slider ref={slider} {...settings}>
-                    {data.map((item) => (
+              <>
+                <Slider ref={slider} {...settings}>
+                  {data.map((item) => (
+                    <>
+                      <Link to="/details">
+                        <div className="movie-card">
+                          <div className="moviecard-img">
+                            <img className="" src={item.image} loading="lazy" alt="" />
+                          </div>
 
-                        <>
-                            <Link to="/details">
-                              <div className="movie-card">
-                                <div className="moviecard-img">
-                                  <img className="" src={item.image} alt="" />
-                                </div>
-
-                                {
-                                  trending ? (
-                                    <div className="title mt-2 d-flex align-items-center justify-content-between">
-                                                                   <small className='d-flex align-items-center'><IoIosTime />{item.time}</small>
-                                                                   <small  className="">
-                                                                   <IoMdEye />2k
-                                                                   </small>
-                                                               </div>
-                                  ) :
-                                  (
-                                    <div className="title mt-2 d-flex align-items-center justify-content-between">
-                                    <div className="d-flex flex-column">
-                                      {item.top && <span className="badge bg-danger">Top 10 In</span>}
-                                      <small className={!arrow ? "badge bg-black p-1 smaller" : ""}>{item.title}</small>
-                                    </div>
-                                    {
-                                      arrow && <button className="">
-                                      <IoIosArrowRoundForward size={20} />
-                                    </button>
-                                    }
-                                    
-                                  </div>
-                                  )
-                                }
-                                
+                          {trending ? (
+                            <div className="title mt-2 d-flex align-items-center justify-content-between">
+                              <small className="d-flex align-items-center">
+                                <IoIosTime />
+                                {item.time}
+                              </small>
+                              <small className="">
+                                <IoMdEye />
+                                2k
+                              </small>
+                            </div>
+                          ) : (
+                            <div className="title mt-2 d-flex align-items-center justify-content-between">
+                              <div className="d-flex flex-column">
+                                {item.top && (
+                                  <span className="badge bg-danger">
+                                    Top 10 In
+                                  </span>
+                                )}
+                                <small
+                                  className={
+                                    !arrow ? "badge bg-black p-1 smaller" : ""
+                                  }
+                                >
+                                  {item.title}
+                                </small>
                               </div>
-                            </Link>
-                          </>
-                    ))}
-                  </Slider>
-                </>
-              
+                              {arrow && (
+                                <button className="">
+                                  <IoIosArrowRoundForward size={20} />
+                                </button>
+                              )}
+                            </div>
+                          )}
+                        </div>
+                      </Link>
+                    </>
+                  ))}
+                </Slider>
+              </>
             </div>
           </div>
         </div>

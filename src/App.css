@@ -103,7 +103,12 @@ input, textarea{
 }
 
 .hero{
-  min-height: 400px;
+  min-height: 490px;
+  background-image: url(../public/Images/heroo.jpg);
+  background-position: center;
+  background-size: cover;
+  background-color: #1F1F1F;
+  background-blend-mode: multiply;
 }
 
 .button2{
@@ -130,7 +135,7 @@ input, textarea{
 
 .hero-content{
   max-width: 700px;
-  min-height: 400px;
+  min-height: 490px;
 }
 
 
@@ -256,7 +261,7 @@ input, textarea{
 }
 
 .footer .nav-link{
-  font-size: 11px !important;
+  font-size: 13px !important;
   opacity: 0.7;
 }
 
@@ -327,14 +332,11 @@ input, textarea{
 }
 
 
-.moviecard-img{
-  height: 159px;
-  width: 159px;
-}
+
 
 .moviecard-img img{
-  width: 100%;
-  object-fit: cover;
+  max-width: 100% !important;
+  object-fit: contain;
   height: 100%;
 }
 
@@ -534,6 +536,8 @@ textarea{
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 1.7rem;
   }
+
+  
   
 }
 
@@ -548,6 +552,11 @@ textarea{
     width: 100%;
   }
   
+  .grid2{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.7rem;
+  }
 
   .button1{
     border: none;
@@ -577,5 +586,10 @@ textarea{
     padding: 10px;
   }
 
+  .moviecard-img {
+    width: 100%;
+  }
+
+  
 
 }

@@ -60,7 +60,7 @@ const MovieList = () => {
             id:1,
             category: "Our Genres",
             time : "2hr 10mins",
-            image : "../../Images/Image (10).png"
+            image : "../../Images/Image (15).png"
         },
         {
             id:1,
@@ -72,7 +72,7 @@ const MovieList = () => {
             id:1,
             category: "Our Genres",
             time : "1hr 22mins",
-            image : "../../Images/Image (18).png"
+            image : "../../Images/Image (16).png"
         },
     ]
     
@@ -80,17 +80,18 @@ const MovieList = () => {
         {
             id:1,
             category: "Our Genres",
-            title : "Action",
-            image : "../../Images/container (5).png",
+            title : "Adventure",
+            image : "../../Images/mix1.png",
             top: true,
         },
         {
             id:1,
             category: "Our Genres",
-            title : "Adventure",
-            image : "../../Images/container (6).png",
+            title : "Action",
+            image : "../../Images/container (13).png",
             top: true,
         },
+        
         {
             id:1,
             category: "Our Genres",
@@ -102,7 +103,7 @@ const MovieList = () => {
             id:1,
             category: "Our Genres",
             title : "Drama",
-            image : "../../Images/container (8).png",
+            image : "../../Images/container (11).png",
             top: true,
         },
         {
@@ -147,7 +148,7 @@ const MovieList = () => {
             id:1,
             category: "Our Genres",
             title : "Released 2 May 2024",
-            image : "../../Images/Image (19).png",
+            image : "../../Images/Image (4).png",
             rel: true,
         },
     ]
