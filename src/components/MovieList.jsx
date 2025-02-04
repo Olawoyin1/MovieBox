@@ -5,6 +5,7 @@ import { IoIosArrowRoundBack } from "react-icons/io";
 import MovieCard from './MovieCard';
 import { IoMdEye } from "react-icons/io";
 import { Link } from 'react-router-dom';
+import Cat from './Cat';
 
 const MovieList = () => {
 
@@ -117,177 +118,74 @@ const MovieList = () => {
         {
             id:1,
             category: "Our Genres",
-            title : "Released at 12 April 2024",
+            title : "Released 12 April 2024",
             image : "../../Images/Image (5).png",
             rel: true,
         },
         {
             id:1,
             category: "Our Genres",
-            title : "Released at 9 March 2024",
+            title : "Released 9 March 2024",
             image : "../../Images/Image.png",
             rel: true,
         },
         {
             id:1,
             category: "Our Genres",
-            title : "Released at 20 June 2024",
+            title : "Released 20 June 2024",
             image : "../../Images/Image (7).png",
             rel: true,
         },
         {
             id:1,
             category: "Our Genres",
-            title : "Released at 22 April 2023",
+            title : "Released 22 April 2023",
             image : "../../Images/Image (8).png",
             rel: true,
         },
         {
             id:1,
             category: "Our Genres",
-            title : "Released at 2 May 2024",
+            title : "Released 2 May 2024",
             image : "../../Images/Image (19).png",
             rel: true,
         },
     ]
   return (
     <div className='my-4'>
-        <div className="container2">
+        <div className="">
 
+            <Cat
+                header = "Our Genres"
+                data = {data}
+                desc=""
+                arrow={true}
+                trending={false}
+            />
 
-            <div className="movielist-header">
-                <div className="cat-header mt-3 d-flex align-items-center justify-content-between">
-                    <h5 className="fw-bold ">Our Genres</h5>
-                    <div className="d-flex next align-items-center gap-2">
-                        <button className="button2">
-                            <IoIosArrowRoundBack size={20} />
-                        </button>
-                        <button  className="button2">
-                            <IoIosArrowRoundForward size={20} />
-                        </button>
-                    </div>
-                </div>
-            </div>
+            <Cat
+                header = "Popular Top 10 In Genres"
+                data = {data1}
+                desc=""
+                arrow={true}
+                trending={false}
+            />
 
-
-            <div className="movielist-items d-flex gap-4 my-4">
-                {
-                    data.map((items)=>(
-                       <MovieCard 
-                        title={items.title}
-                        image={items.image}
-                       />
-                    ))
-                }
-                
-            </div>
-
-
-
-
-
-            {/* new other nes lol  */}
-            <div className="movielist-header">
-                <div className="cat-header mt-3 d-flex align-items-center justify-content-between">
-                    <h5 className="fw-bold ">Popular Top 10 In Genres</h5>
-                    <div className="d-flex next align-items-center gap-2">
-                        <button className="button2">
-                            <IoIosArrowRoundBack size={20} />
-                        </button>
-                        <button  className="button2">
-                            <IoIosArrowRoundForward size={20} />
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <div className="movielist-items d-flex gap-4 my-4">
-                {
-                    data1.map((items)=>(
-                       <MovieCard 
-                        title={items.title}
-                        image={items.image}
-                        top={items.top}
-                       />
-                    ))
-                }
-                
-            </div>
-           
-           
-            <div className="movielist-header">
-                <div className="cat-header mt-3 d-flex align-items-center justify-content-between">
-                    <h5 className="fw-bold ">New Releases</h5>
-                    <div className="d-flex next align-items-center gap-2">
-                        <button className="button2">
-                            <IoIosArrowRoundBack size={20} />
-                        </button>
-                        <button  className="button2">
-                            <IoIosArrowRoundForward size={20} />
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-
-            <div className="movielist-items d-flex gap-4 my-4">
-                {
-                    trending.map((items)=>(
-
-                       <div className="movie-card">
-                        <Link to="/details2">
-                           <img className='moviecard-img' src={items.image} alt="" />
-                           <div className="title mt-2 d-flex align-items-center justify-content-between">
-                               
-                               <div className='d-flex flex-column align-items-center justify-content-center'>
-                               <small className='badge bg-black p-1 muted'>{items.title}</small>
-                               </div>
-                           </div>
-                        </Link>
-                       </div>
-                    ))
-                }
-                
-            </div>
-
-
-
-
-
-            {/* new other nes lol  */}
-            <div className="movielist-header">
-                <div className="cat-header mt-3 d-flex align-items-center justify-content-between">
-                    <h5 className="fw-bold ">Trending Show Now</h5>
-                    <div className="d-flex next align-items-center gap-2">
-                    <button className="button2">
-                        <IoIosArrowRoundBack size={20} />
-                    </button>
-                    <button  className="button2">
-                        <IoIosArrowRoundForward size={20} />
-                    </button>
-                    </div>
-                </div>
-            </div>
-
-            <div className="movielist-items d-flex gap-4 my-4">
-                {
-                    latest.map((items)=>(
-                       <div className="movie-card">
-                        <Link to="/details2">
-                           <img className='moviecard-img' src={items.image} alt="" />
-                           <div className="title mt-2 d-flex align-items-center justify-content-between">
-                               <small className='d-flex align-items-center'><IoIosTime />{items.time}</small>
-                               <small  className="">
-                               <IoMdEye />2k
-                               </small>
-                           </div>
-                        </Link>
-                       </div>
-                    ))
-                }
-                
-            </div>
-
+            <Cat
+                header = "New Releases"
+                data = {trending}
+                desc=""
+                arrow={false}
+                trending={false}
+            />
+            
+            <Cat
+                header = "Trending Show Now"
+                data = {latest}
+                desc=""
+                arrow={false}
+                trending={true}
+            />
 
         </div>
     </div>

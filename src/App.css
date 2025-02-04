@@ -44,7 +44,7 @@ p{
 small{
   margin: 0 !important;
   padding: 0 !important;
-  font-size: 10.9px !important;
+  font-size: 12.9px !important;
   display: inline-block;
 }
 
@@ -328,11 +328,19 @@ input, textarea{
 
 
 .moviecard-img{
-  width: 150px;
-  height: 150px;
+  height: 159px;
+  width: 159px;
 }
 
+.moviecard-img img{
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
 
+.smaller{
+  font-size: 12px !important;
+}
 
 
 /* span{
@@ -341,6 +349,8 @@ input, textarea{
   border-radius: 7px;
   font-size: 10px !important;
 } */
+
+.slick-slide>div {padding: 0 7px;}
 
 
 
