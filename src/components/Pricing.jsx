@@ -35,8 +35,8 @@ const Pricing = () => {
             </small>
           </div>
           <div>
-            <button className="button1">Monthly</button>
-            <button className="button1">Yearly</button>
+            <button className="button1 bg-secondary">Monthly</button>
+            <button className="button1 bg-black">Yearly</button>
           </div>
         </div>
           

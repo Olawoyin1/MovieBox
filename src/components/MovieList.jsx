@@ -4,6 +4,7 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 import { IoIosArrowRoundBack } from "react-icons/io";
 import MovieCard from './MovieCard';
 import { IoMdEye } from "react-icons/io";
+import { Link } from 'react-router-dom';
 
 const MovieList = () => {
 
@@ -232,7 +233,9 @@ const MovieList = () => {
             <div className="movielist-items d-flex gap-4 my-4">
                 {
                     trending.map((items)=>(
+
                        <div className="movie-card">
+                        <Link to="/details2">
                            <img className='moviecard-img' src={items.image} alt="" />
                            <div className="title mt-2 d-flex align-items-center justify-content-between">
                                
@@ -240,6 +243,7 @@ const MovieList = () => {
                                <small className='badge bg-black p-1 muted'>{items.title}</small>
                                </div>
                            </div>
+                        </Link>
                        </div>
                     ))
                 }
@@ -269,6 +273,7 @@ const MovieList = () => {
                 {
                     latest.map((items)=>(
                        <div className="movie-card">
+                        <Link to="/details2">
                            <img className='moviecard-img' src={items.image} alt="" />
                            <div className="title mt-2 d-flex align-items-center justify-content-between">
                                <small className='d-flex align-items-center'><IoIosTime />{items.time}</small>
@@ -276,6 +281,7 @@ const MovieList = () => {
                                <IoMdEye />2k
                                </small>
                            </div>
+                        </Link>
                        </div>
                     ))
                 }

@@ -13,7 +13,7 @@ const Plan = () => {
 
 
             {/* Plan Table */}
-            <table className='my-4'>
+            <table className='my-4 d-none d-md-block'>
                 <thead>
                     <tr>
                         <th>Features</th>
@@ -116,14 +116,67 @@ const Plan = () => {
             </table>
 
             {/* ========FOR SMALLER DEVICES ========= */}
-            <div className="select">
+            <div className="select d-md-none my-4 d-flex align-items-center justify-content-evenly p-2">
                 <button className='button3'>Basic</button>
-                <button className='button3'>Standard</button>
+                <button className='button3 active'>Standard</button>
                 <button className='button3'>Premium</button>
             </div>
 
-            <div className="plan-content">
-                
+            <div className="plan-content d-md-none  p-3 d-flex flex-column gap-3">
+                <div className="m-0 row ">
+                    <div className='col-6 p-0'>
+                        <small className="muted">Price</small>
+                        <p>$12.99/Month</p>
+                    </div>
+                    <div className='col-6'>
+                        <small className="muted">Free Trial</small>
+                        <p>7 Days</p>
+                    </div>
+                </div>
+
+                <div>
+                    <small className="muted">Content</small>
+                    <p>Access to a wider selection of movies and shows, including most new releases and exclusive content</p>
+                </div>
+
+                <div>
+                    <small className="muted">Devices</small>
+                    <p>Watch on Two device simultaneously</p>
+                </div>
+
+                <div className="row">
+                    <div className='col-6 p-0'>
+                        <small className="muted">Cancel Anytime</small>
+                        <p>Yes</p>
+                    </div>
+                    <div className='col-6'>
+                        <small className="muted">HDR</small>
+                        <p>Yes</p>
+                    </div>
+                </div>
+
+                <div className="row m-0">
+                    <div className='col-6 p-0'>
+                        <small className="muted">Dolby Atmos</small>
+                        <p>Yes</p>
+                    </div>
+                    <div className='col-6'>
+                        <small className="muted">Ad - Free</small>
+                        <p>Yes</p>
+                    </div>
+                </div>
+
+                <div className="m-0 row">
+                    <div className='col-6 p-0'> 
+                        <small className="muted">Offline Viewing</small>
+                        <p>Yes, for select titles.</p>
+                    </div>
+                    <div className='col-6'>
+                        <small className="muted">Family Sharing</small>
+                        <p>5 family members.</p>
+                    </div>
+                </div>
+
             </div>
         
 
