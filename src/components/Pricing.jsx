@@ -34,7 +34,7 @@ const Pricing = () => {
         {/* Header Section */}
         <div className="d-flex align-items-md-center align-items-start flex-column flex-md-row gap-3 justify-content-between">
           <div>
-            <h5>Choose the plan that's right for you</h5>
+            <h4>Choose the plan that's right for you</h4>
             <small className="muted">
               Join StreamVibe and select from our flexible subscription options
               tailored to suit your viewing preferences. Get ready for non-stop

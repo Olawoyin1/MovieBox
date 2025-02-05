@@ -54,7 +54,7 @@ const Cat = ({ data, header, desc, arrow, trending }) => {
         <div className="">
           <div className="cat-header mt-3 d-flex align-items-center justify-content-between">
             <div>
-              <h5>{header}</h5>
+              <h4>{header}</h4>
               {desc && (
                 <small className="subhead d-none d-sm-flex muted mt-3">
                   Whether you're looking for a comedy to make you laugh, a drama

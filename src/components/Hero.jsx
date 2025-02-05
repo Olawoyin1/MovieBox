@@ -38,13 +38,13 @@ const Hero = () => {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.5, ease: "easeInOut" }}
         >
-          <motion.h2
+          <motion.h1
             initial={{ opacity: 0, y: -30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.7, ease: "easeOut" }}
           >
             The Best Streaming Experience
-          </motion.h2>
+          </motion.h1>
 
           <motion.small
             className="muted"

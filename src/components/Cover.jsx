@@ -10,7 +10,7 @@ const Cover = () => {
             <div className="container2 my-3">
                 <div className="movie-cover">
                   <div className="movie-info d-flex align-items-center justify-content-center flex-column  gap-2 text-center">
-                    <h4>Avengers End Game</h4>
+                    <h2 className='fw-bold'>Avengers End Game</h2>
                     <small className="muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto amet saepe harum illo repellendus quia impedit laboriosam corrupti pariatur repudiandae.</small>
                     <div className="buttons d-flex align-items-center gap-3">
                       <button className="button1">Play Now</button>

@@ -136,13 +136,13 @@ const Services = () => {
   return (
     <div className="container2 mt-4">
       <div className="mt-4">
-        <motion.h5
+        <motion.h4
           initial={{ opacity: 0, y: -30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
           We Provide you streaming experience across various devices.
-        </motion.h5>
+        </motion.h4>
         <motion.small
           className="subhead muted mt-3"
           initial={{ opacity: 0 }}

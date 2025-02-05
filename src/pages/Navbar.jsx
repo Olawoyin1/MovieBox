@@ -64,7 +64,7 @@ const Navbar = () => {
 
         {/* Desktop Navigation */}
         <nav className="nav d-none d-md-flex">
-          <ul className="navbar">
+          <ul className="navbar p-0">
             {["Home", "Movies", "Support", "Subscriptions"].map(
               (item, index) => (
                 <motion.li
@@ -83,7 +83,7 @@ const Navbar = () => {
         </nav>
 
         {/* Icons */}
-        <div className="icons d-md-flex d-none align-items-center gap-2">
+        <div className="icons p-0 d-md-flex d-none align-items-center gap-2">
           <motion.div whileHover={{ scale: 1.2 }}>
             <IoSearchOutline size={20} />
           </motion.div>
