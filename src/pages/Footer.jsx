@@ -6,7 +6,7 @@ import { IoLogoLinkedin } from "react-icons/io5";
 
 const Footer = () => {
   return (
-    <div className='footer py-3'>
+    <div className='footer py-3 pb-5'>
         <div className="container2">
             <nav className='row m-0'>
                 <ul className='d-flex col-md-4 mt-5 col-lg-2 col-6 flex-column  p-0 gap-2'>
