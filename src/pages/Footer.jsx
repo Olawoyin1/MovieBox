@@ -35,7 +35,7 @@ const Footer = () => {
                 
                 <ul className='d-flex col-md-4 mt-5 col-lg-2 col-6 p-0 flex-column gap-2'>
                     <li className='fw-bold'>Support</li>
-                    <li><a className='nav-link' href="/">Contact Us</a></li>
+                    <li><a className='nav-link' href="/support">Contact Us</a></li>
                 </ul>
 
                 <ul className='d-flex col-md-4 mt-5 col-lg-2 col-6 p-0 flex-column gap-2'>
